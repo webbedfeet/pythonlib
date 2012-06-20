@@ -1,4 +1,9 @@
 #!/usr/bin/python
+"""
+A module for understand the file dependencies of a R project
+(c) Abhijit Dasgupta, 2012
+This work is licensed under a Creative Commons Attribution 3.0 United States
+"""
 
 from re import compile
 from re import search 
@@ -123,7 +128,7 @@ class RDA():
         d2 = self.rdaLoad
         rdafiles=self.rdafiles
         output = "<html>\n"
-        output+="<head><link href='tables.css' rel='stylesheet' type='text/css'></head><body>\n"
+        output+="<head><link href='/home/abhijit/Programs/htmllib/tables.css' rel='stylesheet' type='text/css'></head><body>\n"
         output +="<h2> Provenance of R data files "
         output += "("+datetime.now().strftime("%A, %d %B %Y %I:%M%p")+")<br/>\n"
         output += "<br/>\n <table>\n"
